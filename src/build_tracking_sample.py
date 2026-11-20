@@ -40,11 +40,11 @@ def choose(master: pd.DataFrame, n_total: int) -> pd.DataFrame:
     df = df.sort_values(["_pref", "_r"], ascending=[False, True])
     picks = []
     for _, g in df.groupby(["pff_passCoverage", "offenseFormation"], dropna=False):
-        picks.append(g.head(4))
+        picks.append(g.head(1 if n_total <= 100 else 4))
     chosen = pd.concat(picks)
     rest = df.drop(chosen.index).sort_values("_r")
     chosen = pd.concat([chosen, rest.head(max(0, n_total - len(chosen)))])
-    return chosen.head(max(n_total, len(chosen)))
+    return chosen.head(n_total)
 
 
 def main(n_total: int = 400) -> None:
