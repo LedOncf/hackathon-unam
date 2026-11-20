@@ -1,0 +1,503 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Crear `backend/config.py` y `backend/store.py`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197331274
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197340886
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197718993
+      }
+    ],
+    "1.2 Crear `backend/stats.py`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197331399
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197727356
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197776676
+      }
+    ],
+    "1.3 Crear `backend/situation.py`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197331502
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197727711
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197777075
+      }
+    ],
+    "2.1 Implementar `backend/filters_service.py` y reemplazar `backend/main.py`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197331599
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197782858
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197938138
+      }
+    ],
+    "3. Checkpoint - Backend base": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197331700
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197944218
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198053786
+      }
+    ],
+    "4.1 Crear `backend/schemas.py` y `backend/recommend_service.py`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197331793
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198058110
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198165494
+      }
+    ],
+    "4.2 Crear `backend/verdict.py`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197331887
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198058807
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198165961
+      }
+    ],
+    "4.3 Registrar `GET /api/recommend` en `backend/main.py`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197331994
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198168810
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198268599
+      }
+    ],
+    "5. Checkpoint - Recomendación": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332131
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198273729
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198325687
+      }
+    ],
+    "6.1 Crear `backend/tracking.py`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332229
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198332213
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198436794
+      }
+    ],
+    "6.2 Crear `backend/sample_play_service.py` y registrar `GET /api/sample-play`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332327
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198439692
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198642407
+      }
+    ],
+    "7. Checkpoint - Backend completo": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332419
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198645115
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198720845
+      }
+    ],
+    "8.1 Configurar proxy y base del cliente en `dashboard/`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332503
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198724424
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198931787
+      }
+    ],
+    "8.2 Crear `dashboard/src/lib/board.ts`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332582
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198725475
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198931473
+      }
+    ],
+    "8.4 Crear `FilterPanel.tsx` y `ScenarioBar.tsx`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332667
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198940358
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199062609
+      }
+    ],
+    "8.5 Crear panel central: `PanelState.tsx`, `VerdictCard.tsx`, `ComparisonCharts.tsx`, `PhysicsChart.tsx`, `ScopeFooter.tsx`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332760
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198941472
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199062872
+      }
+    ],
+    "8.6 Crear `ScenarioCard.tsx`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332835
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198942305
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199063866
+      }
+    ],
+    "8.7 Crear componentes de la pizarra": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197332913
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198943556
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199064559
+      }
+    ],
+    "8.8 Crear `hooks/usePlayback.ts`, `PlaybackController.tsx` y `LiveMetrics.tsx`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197333002
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198944184
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199065480
+      }
+    ],
+    "8.9 Integrar todo en `dashboard/src/App.tsx`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197333086
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199068800
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199180956
+      }
+    ],
+    "9. Checkpoint - Dashboard": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197333191
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199186195
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199271310
+      }
+    ],
+    "10.1 Crear `src/plots.py` con las funciones de cálculo": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197333268
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199273747
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199344414
+      }
+    ],
+    "10.3 Añadir el dibujo y `main` a `src/plots.py`": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197333352
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199347304
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199710487
+      }
+    ],
+    "11.1 Redactar `README.md` en la raíz": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197333444
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199716531
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199833957
+      }
+    ],
+    "12.1 Ejecutar y corregir las verificaciones de build e importación": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197333517
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199837779
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795200279643
+      }
+    ],
+    "13. Checkpoint final - Ensure all tests pass": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197333600
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795200285226
+      },
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795200361072
+      }
+    ],
+    "1. Fundamentos del backend: configuración, almacén de datos, estadística y validación de filtros": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197777300
+      }
+    ],
+    "2. Aplicación FastAPI, endpoint de filtros y servicio estático": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795197938241
+      }
+    ],
+    "4. Servicio de recomendación y Verdict": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198268700
+      }
+    ],
+    "6. Jugada real con tracking": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795198642505
+      }
+    ],
+    "8. Dashboard React": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199181133
+      }
+    ],
+    "10. Figuras estáticas": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199710664
+      }
+    ],
+    "11. Reporte ejecutivo": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795199834099
+      }
+    ],
+    "12. Verificación de compilación y operación": [
+      {
+        "executionId": "823b8695-90f6-4139-a2b5-34b315c30fff",
+        "chatSessionId": "sess_e7a8fd2c-c69a-4103-ba1f-99fa0408f039",
+        "timestamp": 1795200279793
+      }
+    ]
+  }
+}
