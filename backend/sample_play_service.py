@@ -56,6 +56,8 @@ def parse_exclude(raw: str | None) -> list[str]:
 def candidate_pool(sub: pd.DataFrame) -> pd.DataFrame:
     """Jugadas del Subset con tracking y ``snap_frameId``/``res_frameId`` no nulos (8.1)."""
     m = sub["has_tracking"].astype(bool) & sub["snap_frameId"].notna() & sub["res_frameId"].notna()
+    if config.SAMPLE_PLAY_IDS is not None:
+        m &= sub["play_id"].isin(config.SAMPLE_PLAY_IDS)
     return sub.loc[m]
 
 
