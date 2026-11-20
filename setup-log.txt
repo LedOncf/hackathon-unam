@@ -144,3 +144,267 @@ TODO OK. Tu proyecto está en:
   /home/edg4rcerv/Downloads/hackathon-unam
 Trabaja dentro de esa carpeta. Cuando termines, corre:  sh .hackathon/setup.sh --entregar
 22:51:25 FIN con código de salida 0
+
+===== setup 2026-11-20 12:57:54 =====
+12:57:54 Sistema detectado: linux x64  |  Python del arranque: 3.12.12
+12:57:54 MODO: entregar  |  versión del script: 2026-11-16  |  argumentos: --entregar
+12:57:54 SISTEMA: Linux-7.3.3-200.fc44.x86_64-x86_64-with-glibc2.43  |  detectado: linux x64  |  versión: #1 SMP PREEMPT_DYNAMIC Fri Nov  6 20:34:09 UTC 2026
+12:57:54 PYTHON: 3.12.12 (/home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python)
+12:57:54 USUARIO: edg4rcerv  |  carpeta actual: /home/edg4rcerv/Downloads/hackathon-unam
+12:57:54 PROYECTO: /home/edg4rcerv/Downloads/hackathon-unam  |  largo de ruta: 40  |  espacios: False  |  no ASCII: False
+12:57:54 DISCO LIBRE: 71.3 GB
+12:57:54 PROXY: ninguno
+12:57:54 Proyecto: /home/edg4rcerv/Downloads/hackathon-unam
+12:57:54 
+Preparando la entrega...
+12:57:54 
+[1/7] Validando el entorno
+12:57:54 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/uv/uv pip check --python /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python
+12:57:54 Checked 55 packages in 9ms
+All installed packages are compatible
+12:57:54 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import pandas, numpy, fastapi, uvicorn, pydantic, strands, boto3, httpx
+12:57:56 
+12:57:56   Pieza              Esperado                            Encontrado      Estado
+12:57:56   -----------------  ----------------------------------  --------------  ------
+12:57:56   uv                 0.11.19                             0.11.19         OK    
+12:57:56   Python (.venv)     3.12.12                             3.12.12         OK    
+12:57:56   Node               v22.23.1                            v22.23.1        OK    
+12:57:56   npm                10.x                                10.9.8          OK    
+12:57:56   Paquetes Python    9 fijos                             9 coinciden     OK    
+12:57:56   Paquetes npm       12 fijos                            12 coinciden    OK    
+12:57:56   pip check          sin conflictos                      sin conflictos  OK    
+12:57:56   Importar paquetes  pandas, fastapi, pydantic, strands  importan        OK    
+12:57:56 
+[2/7] Revisando el README y el stack
+12:57:56     README encontrado
+12:57:57 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import backend.main as m;assert hasattr(m,'app'), 'APP';assert any(getattr(r,'path','')=='/health' for r in m.app.routes), 'HEALTH'
+12:57:57 
+12:57:57     El proyecto sigue el stack del evento
+12:57:57     Rutas del dashboard OK (ninguna empieza con '/')
+12:57:57 
+[3/7] Compilando el dashboard (vite build)
+12:57:57 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/node/bin/node /home/edg4rcerv/Downloads/hackathon-unam/dashboard/node_modules/vite/bin/vite.js build
+12:58:03 vite v5.4.21 building for production...
+transforming...
+✓ 440 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.38 kB │ gzip:   0.27 kB
+dist/assets/index-CoXLndJo.css   11.78 kB │ gzip:   2.85 kB
+dist/assets/index-DgX_GCWt.js   559.42 kB │ gzip: 168.14 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 4.80s
+12:58:03     Dashboard compilado en dashboard/dist
+12:58:03 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/node/bin/node /home/edg4rcerv/Downloads/hackathon-unam/dashboard/node_modules/typescript/bin/tsc --noEmit -p /home/edg4rcerv/Downloads/hackathon-unam/dashboard
+12:58:06 
+12:58:06 
+[4/7] Comprobando el backend (sintaxis e importación)
+12:58:06 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -m compileall -q backend
+12:58:06 
+12:58:06 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import backend.main
+12:58:07 
+12:58:07     Backend OK (backend.main se importa sin errores)
+12:58:07 
+[5/7] Buscando llaves y credenciales en tus archivos
+12:58:08     Sin credenciales a la vista
+12:58:08 
+[6/7] Empaquetando
+12:59:07 
+[7/7] Verificando el .zip
+12:59:11     206 archivos, 172.2 MB
+12:59:11 
+LISTO. Sube este archivo:
+  /home/edg4rcerv/Downloads/entrega-hackathon-unam-20261120-1257.zip
+12:59:11 FIN con código de salida 0
+
+===== setup 2026-11-20 13:08:00 =====
+13:08:00 Sistema detectado: linux x64  |  Python del arranque: 3.12.12
+13:08:00 MODO: entregar  |  versión del script: 2026-11-16  |  argumentos: --entregar
+13:08:00 SISTEMA: Linux-7.3.3-200.fc44.x86_64-x86_64-with-glibc2.43  |  detectado: linux x64  |  versión: #1 SMP PREEMPT_DYNAMIC Fri Nov  6 20:34:09 UTC 2026
+13:08:00 PYTHON: 3.12.12 (/home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python)
+13:08:00 USUARIO: edg4rcerv  |  carpeta actual: /home/edg4rcerv/Downloads/hackathon-unam
+13:08:00 PROYECTO: /home/edg4rcerv/Downloads/hackathon-unam  |  largo de ruta: 40  |  espacios: False  |  no ASCII: False
+13:08:00 DISCO LIBRE: 71.2 GB
+13:08:00 PROXY: ninguno
+13:08:00 Proyecto: /home/edg4rcerv/Downloads/hackathon-unam
+13:08:00 
+Preparando la entrega...
+13:08:00 
+[1/7] Validando el entorno
+13:08:00 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/uv/uv pip check --python /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python
+13:08:00 Checked 55 packages in 1ms
+All installed packages are compatible
+13:08:00 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import pandas, numpy, fastapi, uvicorn, pydantic, strands, boto3, httpx
+13:08:02 
+13:08:02   Pieza              Esperado                            Encontrado      Estado
+13:08:02   -----------------  ----------------------------------  --------------  ------
+13:08:02   uv                 0.11.19                             0.11.19         OK    
+13:08:02   Python (.venv)     3.12.12                             3.12.12         OK    
+13:08:02   Node               v22.23.1                            v22.23.1        OK    
+13:08:02   npm                10.x                                10.9.8          OK    
+13:08:02   Paquetes Python    9 fijos                             9 coinciden     OK    
+13:08:02   Paquetes npm       12 fijos                            12 coinciden    OK    
+13:08:02   pip check          sin conflictos                      sin conflictos  OK    
+13:08:02   Importar paquetes  pandas, fastapi, pydantic, strands  importan        OK    
+13:08:02 
+[2/7] Revisando el README y el stack
+13:08:02     README encontrado
+13:08:02 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import backend.main as m;assert hasattr(m,'app'), 'APP';assert any(getattr(r,'path','')=='/health' for r in m.app.routes), 'HEALTH'
+13:08:03 
+13:08:03     El proyecto sigue el stack del evento
+13:08:03     Rutas del dashboard OK (ninguna empieza con '/')
+13:08:03 
+[3/7] Compilando el dashboard (vite build)
+13:08:03 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/node/bin/node /home/edg4rcerv/Downloads/hackathon-unam/dashboard/node_modules/vite/bin/vite.js build
+13:08:09 vite v5.4.21 building for production...
+transforming...
+✓ 440 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.38 kB │ gzip:   0.27 kB
+dist/assets/index-CoXLndJo.css   11.78 kB │ gzip:   2.85 kB
+dist/assets/index-DgX_GCWt.js   559.42 kB │ gzip: 168.14 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 5.16s
+13:08:09     Dashboard compilado en dashboard/dist
+13:08:09 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/node/bin/node /home/edg4rcerv/Downloads/hackathon-unam/dashboard/node_modules/typescript/bin/tsc --noEmit -p /home/edg4rcerv/Downloads/hackathon-unam/dashboard
+13:08:12 
+13:08:12 
+[4/7] Comprobando el backend (sintaxis e importación)
+13:08:12 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -m compileall -q backend
+13:08:12 
+13:08:12 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import backend.main
+13:08:13 
+13:08:13     Backend OK (backend.main se importa sin errores)
+13:08:13 
+[5/7] Buscando llaves y credenciales en tus archivos
+13:08:14     Sin credenciales a la vista
+13:08:14 
+[6/7] Empaquetando
+13:09:11 
+[7/7] Verificando el .zip
+13:09:15     206 archivos, 172.2 MB
+13:09:15 
+LISTO. Sube este archivo:
+  /home/edg4rcerv/Downloads/entrega-hackathon-unam-20261120-1308.zip
+13:09:15 FIN con código de salida 0
+
+===== setup 2026-11-20 13:15:44 =====
+13:15:44 Sistema detectado: linux x64  |  Python del arranque: 3.12.12
+13:15:44 MODO: entregar  |  versión del script: 2026-11-16  |  argumentos: --entregar
+13:15:44 SISTEMA: Linux-7.3.3-200.fc44.x86_64-x86_64-with-glibc2.43  |  detectado: linux x64  |  versión: #1 SMP PREEMPT_DYNAMIC Fri Nov  6 20:34:09 UTC 2026
+13:15:44 PYTHON: 3.12.12 (/home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python)
+13:15:44 USUARIO: edg4rcerv  |  carpeta actual: /home/edg4rcerv/Downloads/hackathon-unam
+13:15:44 PROYECTO: /home/edg4rcerv/Downloads/hackathon-unam  |  largo de ruta: 40  |  espacios: False  |  no ASCII: False
+13:15:44 DISCO LIBRE: 71.0 GB
+13:15:44 PROXY: ninguno
+13:15:44 Proyecto: /home/edg4rcerv/Downloads/hackathon-unam
+13:15:44 
+Preparando la entrega...
+13:15:44 
+[1/7] Validando el entorno
+13:15:44 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/uv/uv pip check --python /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python
+13:15:44 Checked 55 packages in 1ms
+All installed packages are compatible
+13:15:44 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import pandas, numpy, fastapi, uvicorn, pydantic, strands, boto3, httpx
+13:15:46 
+13:15:46   Pieza              Esperado                            Encontrado      Estado
+13:15:46   -----------------  ----------------------------------  --------------  ------
+13:15:46   uv                 0.11.19                             0.11.19         OK    
+13:15:46   Python (.venv)     3.12.12                             3.12.12         OK    
+13:15:46   Node               v22.23.1                            v22.23.1        OK    
+13:15:46   npm                10.x                                10.9.8          OK    
+13:15:46   Paquetes Python    9 fijos                             9 coinciden     OK    
+13:15:46   Paquetes npm       12 fijos                            12 coinciden    OK    
+13:15:46   pip check          sin conflictos                      sin conflictos  OK    
+13:15:46   Importar paquetes  pandas, fastapi, pydantic, strands  importan        OK    
+13:15:46 
+[2/7] Revisando el README y el stack
+13:15:46     README encontrado
+13:15:46 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import backend.main as m;assert hasattr(m,'app'), 'APP';assert any(getattr(r,'path','')=='/health' for r in m.app.routes), 'HEALTH'
+13:15:47 
+13:15:47     El proyecto sigue el stack del evento
+13:15:47     Rutas del dashboard OK (ninguna empieza con '/')
+13:15:47 
+[3/7] Compilando el dashboard (vite build)
+13:15:47 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/node/bin/node /home/edg4rcerv/Downloads/hackathon-unam/dashboard/node_modules/vite/bin/vite.js build
+13:15:52 vite v5.4.21 building for production...
+transforming...
+✓ 440 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.38 kB │ gzip:   0.27 kB
+dist/assets/index-CoXLndJo.css   11.78 kB │ gzip:   2.85 kB
+dist/assets/index-DgX_GCWt.js   559.42 kB │ gzip: 168.14 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 5.26s
+13:15:52     Dashboard compilado en dashboard/dist
+13:15:52 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/node/bin/node /home/edg4rcerv/Downloads/hackathon-unam/dashboard/node_modules/typescript/bin/tsc --noEmit -p /home/edg4rcerv/Downloads/hackathon-unam/dashboard
+13:15:56 
+13:15:56 
+[4/7] Comprobando el backend (sintaxis e importación)
+13:15:56 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -m compileall -q backend
+13:15:56 
+13:15:56 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import backend.main
+13:15:57 
+13:15:57     Backend OK (backend.main se importa sin errores)
+13:15:57 
+[5/7] Buscando llaves y credenciales en tus archivos
+13:15:58     Sin credenciales a la vista
+13:15:58 
+[6/7] Empaquetando
+13:17:02 
+[7/7] Verificando el .zip
+13:17:06     207 archivos, 172.5 MB
+13:17:06 
+LISTO. Sube este archivo:
+  /home/edg4rcerv/Downloads/entrega-hackathon-unam-20261120-1315.zip
+13:17:06 FIN con código de salida 0
+
+===== setup 2026-11-20 13:17:40 =====
+13:17:40 Sistema detectado: linux x64  |  Python del arranque: 3.12.12
+13:17:40 MODO: check  |  versión del script: 2026-11-16  |  argumentos: --check
+13:17:40 SISTEMA: Linux-7.3.3-200.fc44.x86_64-x86_64-with-glibc2.43  |  detectado: linux x64  |  versión: #1 SMP PREEMPT_DYNAMIC Fri Nov  6 20:34:09 UTC 2026
+13:17:40 PYTHON: 3.12.12 (/home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python)
+13:17:40 USUARIO: edg4rcerv  |  carpeta actual: /home/edg4rcerv/Downloads/hackathon-unam
+13:17:40 PROYECTO: /home/edg4rcerv/Downloads/hackathon-unam  |  largo de ruta: 40  |  espacios: False  |  no ASCII: False
+13:17:40 DISCO LIBRE: 70.8 GB
+13:17:40 PROXY: ninguno
+13:17:40 Proyecto: /home/edg4rcerv/Downloads/hackathon-unam
+13:17:40 
+Validando (no se descarga ni instala nada)...
+13:17:41 $ /home/edg4rcerv/Downloads/hackathon-unam/.hackathon/.tools/uv/uv pip check --python /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python
+13:17:41 Checked 55 packages in 1ms
+All installed packages are compatible
+13:17:41 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import pandas, numpy, fastapi, uvicorn, pydantic, strands, boto3, httpx
+13:17:43 
+13:17:43   Pieza              Esperado                            Encontrado      Estado
+13:17:43   -----------------  ----------------------------------  --------------  ------
+13:17:43   uv                 0.11.19                             0.11.19         OK    
+13:17:43   Python (.venv)     3.12.12                             3.12.12         OK    
+13:17:43   Node               v22.23.1                            v22.23.1        OK    
+13:17:43   npm                10.x                                10.9.8          OK    
+13:17:43   Paquetes Python    9 fijos                             9 coinciden     OK    
+13:17:43   Paquetes npm       12 fijos                            12 coinciden    OK    
+13:17:43   pip check          sin conflictos                      sin conflictos  OK    
+13:17:43   Importar paquetes  pandas, fastapi, pydantic, strands  importan        OK    
+13:17:43 
+Revisando desviaciones del stack...
+13:17:43 $ /home/edg4rcerv/Downloads/hackathon-unam/.venv/bin/python -c import backend.main as m;assert hasattr(m,'app'), 'APP';assert any(getattr(r,'path','')=='/health' for r in m.app.routes), 'HEALTH'
+13:17:44 
+13:17:44     El proyecto sigue el stack del evento
+13:17:44 
+RESULTADO: TODO OK, puedes entregar.
+13:17:44 FIN con código de salida 0
