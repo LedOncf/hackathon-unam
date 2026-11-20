@@ -1,19 +1,52 @@
-"""Estadística del Backend: envoltorios de `src.analyze` y redondeo.
+"""Estadística del Backend: Wilson, Newcombe (z = 1.96) y redondeo.
 
-Una sola fuente de verdad: Wilson y Newcombe se calculan con
-`src.analyze.wilson_ci` y `src.analyze.diff_props_ci` (z = 1.96). Este módulo
-solo convierte a porcentaje o puntos porcentuales y redondea una única vez, al
-devolver, para que el signo de un efecto redondeado coincida con el de la
-diferencia de tasas redondeadas.
+Autocontenido: la plataforma solo empaqueta `backend/` y no incluye el paquete
+`src/`, así que estas funciones replican (con la misma fórmula) las de
+`src/analyze.py`. Convierte a porcentaje o puntos porcentuales y redondea una
+única vez, al devolver, para que el signo de un efecto redondeado coincida con
+el de la diferencia de tasas redondeadas.
 """
 
 from __future__ import annotations
 
 import math
+from types import SimpleNamespace
 
 import pandas as pd
 
-from src.analyze import diff_props_ci, wilson_ci
+Z95 = 1.96
+
+
+def wilson_ci(k: int, n: int, z: float = Z95) -> tuple[float, float] | None:
+    """IC de Wilson para una proporción. None si n <= 0."""
+    if n <= 0:
+        return None
+    p = k / n
+    z2 = z * z
+    den = 1.0 + z2 / n
+    center = (p + z2 / (2.0 * n)) / den
+    half = z * math.sqrt(p * (1.0 - p) / n + z2 / (4.0 * n * n)) / den
+    return max(0.0, center - half), min(1.0, center + half)
+
+
+def diff_props_ci(k1: int, n1: int, k0: int, n0: int, z: float = Z95) -> SimpleNamespace:
+    """Diferencia de proporciones (grupo 1 menos 0), IC híbrido de Newcombe.
+
+    Devuelve un objeto con `diff`, `lo` y `hi` en proporción (no pp). Con un
+    grupo vacío todo es None; con n < 2 en algún grupo solo hay `diff`.
+    """
+    out = SimpleNamespace(diff=None, lo=None, hi=None)
+    if n1 <= 0 or n0 <= 0:
+        return out
+    p1, p0 = k1 / n1, k0 / n0
+    out.diff = p1 - p0
+    if n1 < 2 or n0 < 2:
+        return out
+    l1, u1 = wilson_ci(k1, n1, z)  # type: ignore[misc]
+    l0, u0 = wilson_ci(k0, n0, z)  # type: ignore[misc]
+    out.lo = out.diff - math.sqrt((p1 - l1) ** 2 + (u0 - p0) ** 2)
+    out.hi = out.diff + math.sqrt((u1 - p1) ** 2 + (p0 - l0) ** 2)
+    return out
 
 
 def _round(x, ndigits: int):
