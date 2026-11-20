@@ -14,3 +14,10 @@ __pycache__/
 *.pem
 *.key
 .aws/
+
+# Datos crudos (pesados, ~1 GB, repo anidado propio): solo lectura, no se versionan
+data/
+
+# Caches de pruebas
+.pytest_cache/
+*.pyc
